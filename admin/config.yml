@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: selminha/site_escola
+  branch: main
+
+# Onde as imagens e PDFs enviados pelo painel serão salvos no GitHub
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  # Coleção de Notícias e Avisos
+  - name: "noticias"
+    label: "Notícias & Avisos"
+    folder: "_noticias" # Pasta onde os arquivos serão salvos
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título da Notícia", name: "title", widget: "string" }
+      - { label: "Data de Publicação", name: "date", widget: "datetime" }
+      - { label: "Categoria", name: "categoria", widget: "select", options: ["Vida Escolar", "Pedagógico", "Cooperativa de Pais", "Eventos"] }
+      - { label: "Imagem de Destaque", name: "image", widget: "image", required: false }
+      - { label: "Resumo", name: "summary", widget: "string" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  # Coleção do Jornal da Escola
+  - name: "jornal"
+    label: "Edições do Jornal Escolar"
+    folder: "_jornais"
+    create: true
+    fields:
+      - { label: "Título da Edição", name: "title", widget: "string", default: "Vozes da Chácara" }
+      - { label: "Número da Edição", name: "numero", widget: "number" }
+      - { label: "Semestre Letivo", name: "semestre", widget: "string" }
+      - { label: "Destaque Principal", name: "destaque", widget: "string" }
+      - { label: "Arquivo PDF da Edição", name: "pdf", widget: "file" }
