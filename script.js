@@ -251,3 +251,45 @@ if (teamFilterBtns.length > 0 && teamCards.length > 0) {
   }
 }
 
+// 8. Filtro Interativo e Busca de Documentos Oficiais
+const docFilterBtns = document.querySelectorAll('.doc-filter-btn');
+const docCards = document.querySelectorAll('.doc-card');
+const docSearchInput = document.getElementById('doc-search-input');
+
+function filterDocs() {
+  const activeBtn = document.querySelector('.doc-filter-btn.active');
+  const activeFilter = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+  const query = docSearchInput ? docSearchInput.value.toLowerCase().trim() : '';
+
+  docCards.forEach(card => {
+    const category = card.getAttribute('data-category');
+    const title = (card.querySelector('.doc-card-title')?.textContent || '').toLowerCase();
+    const desc = (card.querySelector('.doc-card-desc')?.textContent || '').toLowerCase();
+
+    const matchesFilter = (activeFilter === 'all' || category === activeFilter);
+    const matchesSearch = (!query || title.includes(query) || desc.includes(query));
+
+    if (matchesFilter && matchesSearch) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+if (docFilterBtns.length > 0 && docCards.length > 0) {
+  docFilterBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      docFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterDocs();
+    });
+  });
+}
+
+if (docSearchInput) {
+  docSearchInput.addEventListener('input', filterDocs);
+}
+
+

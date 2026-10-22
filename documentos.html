@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos & Projeto Pedagógico | Escola Coopep Piracicaba</title>
+  <meta name="description" content="Acesse os documentos oficiais da Escola Coopep: Projeto Político-Pedagógico (PPP), Regimento Escolar, Estatuto Social cooperativo, Manual do Estudante e Calendário Escolar.">
+
+  <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Folha de Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BARRA DE TOPO AFETIVA -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-pill">
+          <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+          Transparência & Gestão Democrática
+        </span>
+        <span class="top-link">
+          <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--cgreen-400);"></i>
+          Av. Dois Córregos, 3526 - Piracicaba / SP
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://wa.me/551934243730" target="_blank" rel="noopener noreferrer" class="top-link">
+          <i data-lucide="message-circle" style="width: 14px; height: 14px; color: var(--cgreen-400);"></i>
+          WhatsApp: (19) 3424-3730
+        </a>
+        <a href="index.html#visita" class="top-link highlight">
+          <i data-lucide="coffee" style="width: 14px; height: 14px;"></i>
+          Agendar um Café Conosco
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="main-header">
+    <div class="container header-inner">
+
+      <!-- Logotipo Coopep -->
+      <a href="index.html" class="brand-logo" aria-label="Escola Coopep Página Inicial">
+        <div class="brand-icon">
+          <i data-lucide="trees" style="width: 26px; height: 26px;"></i>
+          <span class="brand-dot"></span>
+        </div>
+        <div class="brand-text">
+          <h1>ESCOLA <span>COOPEP</span></h1>
+          <p class="brand-tagline">
+            <span class="green-dot"></span>
+            Cooperativa de Pais • Piracicaba
+          </p>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <a href="index.html#escola" class="nav-link">A Escola</a>
+        <a href="index.html#chacara" class="nav-link" style="color: var(--cgreen-700);">🌿 A Chácara</a>
+        <a href="index.html#ciclos" class="nav-link">Infantil & Fundamental</a>
+        <a href="index.html#cooperativa" class="nav-link">O Jeito Cooperativo</a>
+        <a href="index.html#equipe" class="nav-link">Nossa Equipe</a>
+        <a href="documentos.html" class="nav-link" style="color: var(--cblue-700); font-weight: 800;">Documentos & PPP</a>
+
+        <!-- Link Dinâmico (Mural & Jornal) -->
+        <a href="index.html#comunicacao-section" id="nav-comunicacao-link" class="nav-pill-link">
+          <i data-lucide="newspaper" style="width: 16px; height: 16px;"></i>
+          Jornal & Notícias
+        </a>
+      </nav>
+
+      <!-- Botões de Ação -->
+      <div class="header-actions">
+        <a href="https://wa.me/551934243730" target="_blank" class="icon-action-btn" title="Conversar no WhatsApp">
+          <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+        </a>
+        <a href="index.html#visita" class="btn-primary">
+          <i data-lucide="calendar-heart" style="width: 17px; height: 17px;"></i>
+          Agende uma Visita
+        </a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-menu-toggle" id="mobile-toggle-btn" aria-label="Abrir menu de navegação">
+        <i data-lucide="menu" id="menu-icon-bars" style="width: 24px; height: 24px;"></i>
+        <i data-lucide="x" id="menu-icon-close" style="width: 24px; height: 24px; display: none;"></i>
+      </button>
+
+    </div>
+
+    <!-- Gaveta Mobile -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-links">
+        <a href="index.html#escola" class="mobile-link">A Escola e Valores</a>
+        <a href="index.html#chacara" class="mobile-link" style="color: var(--cgreen-700);">A Chácara (6.000 m²) 🌳</a>
+        <a href="index.html#ciclos" class="mobile-link">Infantil, Fundamental & Integral</a>
+        <a href="index.html#cooperativa" class="mobile-link">A Cooperativa de Famílias</a>
+        <a href="index.html#equipe" class="mobile-link">Nossa Equipe & Educadores</a>
+        <a href="documentos.html" class="mobile-link" style="color: var(--cblue-700); font-weight: 800;">Documentos & PPP</a>
+        <a href="index.html#comunicacao-section" class="mobile-link"
+          style="background: var(--corange-50); color: var(--corange-700);">
+          <span>📰 Jornal & Notícias</span>
+          <span
+            style="font-size: 0.65rem; background: var(--corange-200); padding: 2px 6px; border-radius: 9999px;">Ativo</span>
+        </a>
+      </div>
+      <a href="index.html#visita" class="btn-primary mobile-link"
+        style="display: flex; justify-content: center; width: 100%; margin-bottom: 10px;">
+        Agendar Visita com a Família
+      </a>
+      <a href="https://wa.me/551934243730" target="_blank" class="btn-secondary"
+        style="display: flex; justify-content: center; width: 100%;">
+        <i data-lucide="message-circle" style="width: 16px; height: 16px; color: var(--cgreen-600);"></i>
+        WhatsApp Secretaria
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO DA CENTRAL DE DOCUMENTOS -->
+    <section class="doc-hero">
+      <div class="container">
+        <span class="section-badge badge-blue" style="background: rgba(255, 255, 255, 0.15); color: var(--white); border-color: rgba(255, 255, 255, 0.25);">
+          <span>📜</span> Transparência & Diretrizes Pedagógicas
+        </span>
+        <h1 class="hero-title" style="font-size: 2.3rem; margin-bottom: 12px; color: var(--white);">
+          Documentos Oficiais & Projeto Pedagógico
+        </h1>
+        <p class="section-subtitle" style="margin: 0 auto; max-width: 740px; color: var(--cblue-100);">
+          Acesso público e aberto às diretrizes sociointeracionistas, regimento escolar, estatuto social cooperativo, calendários e manuais da Escola Coopep em Piracicaba.
+        </p>
+
+        <!-- Campo de Busca em Tempo Real -->
+        <div class="doc-search-wrapper">
+          <i data-lucide="search" class="doc-search-icon" style="width: 18px; height: 18px;"></i>
+          <input type="text" id="doc-search-input" class="doc-search-input"
+            placeholder="Buscar documento (ex: PPP, Regimento, Estatuto, Calendário, Manual...)"
+            aria-label="Buscar documento oficial da Escola Coopep">
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: O PROJETO POLÍTICO-PEDAGÓGICO (PPP) -->
+    <section class="section-spacing" id="pedagogico" style="background: var(--cream-50);">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-badge badge-blue">
+            <span>🌱</span> Fundamentação Teórica
+          </span>
+          <h2 class="section-title">
+            O Projeto Político-Pedagógico da Escola Coopep
+          </h2>
+          <p class="section-subtitle">
+            Conheça as bases que orientam cada prática educativa, a mediação dos professores e a relação viva das crianças com o conhecimento e a natureza.
+          </p>
+        </div>
+
+        <!-- Card Nobre de Destaque do PPP -->
+        <div class="ppp-highlight-card">
+          <div class="ppp-highlight-header">
+            <div>
+              <span class="ppp-badge-tag">
+                <i data-lucide="file-check" style="width: 14px; height: 14px;"></i>
+                Documento Norteador • Vigência 2023 / 2024
+              </span>
+              <h3 style="font-family: var(--font-title); font-size: 1.6rem; color: var(--cblue-950); margin: 10px 0 6px;">
+                Construção Ativa do Conhecimento & Sociointeracionismo
+              </h3>
+              <p style="font-size: 0.92rem; color: var(--slate-600); margin: 0; max-width: 720px; line-height: 1.6;">
+                Em 1992, um grupo de famílias e educadores de Piracicaba fundou a Coopep para criar uma escola onde o estudante não fosse mero receptor passivo. Com base nos princípios de <strong>Jean Piaget</strong> e <strong>Lev Vygotsky</strong>, a aprendizagem acontece pelo estímulo, pela investigação e pela constante troca entre crianças e professores qualificados.
+              </p>
+            </div>
+            <div>
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2024/02/PPP-Escola-Coopep-2023_2024-2.pdf"
+                target="_blank" rel="noopener noreferrer" class="btn-primary"
+                style="white-space: nowrap; padding: 14px 22px; gap: 8px;">
+                <i data-lucide="download" style="width: 17px; height: 17px;"></i>
+                Baixar PPP Completo (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Grade dos 4 Pilares do PPP -->
+          <div class="ppp-pillars-grid">
+
+            <div class="ppp-pillar-item">
+              <div class="ppp-pillar-title">
+                <span style="font-size: 1.3rem;">🧠</span>
+                Construtivismo & Mediação
+              </div>
+              <p class="ppp-pillar-text">
+                O estudante elabora hipóteses e investiga com autonomia guiada. Os educadores atuam como mediadores sensíveis do saber.
+              </p>
+            </div>
+
+            <div class="ppp-pillar-item">
+              <div class="ppp-pillar-title">
+                <span style="font-size: 1.3rem;">🌳</span>
+                Chácara & Educação Ambiental
+              </div>
+              <p class="ppp-pillar-text">
+                Com 6.000 m² de verde, horta e pomar, a natureza é sala de aula viva para ciências, sustentabilidade e vivências sensoriais.
+              </p>
+            </div>
+
+            <div class="ppp-pillar-item">
+              <div class="ppp-pillar-title">
+                <span style="font-size: 1.3rem;">🤝</span>
+                Gestão Democrática e Pais
+              </div>
+              <p class="ppp-pillar-text">
+                Cooperativa sem fins lucrativos: 100% dos recursos são reinvestidos. Decisões compartilhadas em assembleias de famílias.
+              </p>
+            </div>
+
+            <div class="ppp-pillar-item">
+              <div class="ppp-pillar-title">
+                <span style="font-size: 1.3rem;">📋</span>
+                Avaliação Formativa
+              </div>
+              <p class="ppp-pillar-text">
+                Acompanhamento processual e contínuo com relatórios descritivos e Projeto de Vida, respeitando o ritmo único de cada infância.
+              </p>
+            </div>
+
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; border-top: 1px solid var(--cblue-100); padding-top: 18px; font-size: 0.82rem; color: var(--slate-600);">
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <span>🏛️ Registrado na Diretoria Regional de Ensino de Piracicaba</span>
+              <span>•</span>
+              <span>📜 Alinhado às Diretrizes Curriculares Nacionais do MEC</span>
+            </div>
+            <span style="font-weight: 700; color: var(--cblue-800);">Documento Público de Acesso Livre</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO: CENTRAL DE DOCUMENTOS E DOWNLOADS -->
+    <section class="section-spacing" id="central-documentos" style="background: rgba(239, 246, 255, 0.45); border-bottom: 1px solid var(--cblue-100);">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-badge badge-blue">
+            <span>📁</span> Acervo Oficial
+          </span>
+          <h2 class="section-title">
+            Central de Downloads e Documentos
+          </h2>
+          <p class="section-subtitle">
+            Todos os documentos regulamentares, regimentais e informativos da Escola Coopep e da Cooperativa Mantenedora disponíveis para consulta em PDF.
+          </p>
+        </div>
+
+        <!-- Filtros por Categoria de Documento -->
+        <div class="doc-filter-bar">
+          <button type="button" class="doc-filter-btn active" data-filter="all">Todos os Documentos (7)</button>
+          <button type="button" class="doc-filter-btn" data-filter="pedagogico">Pedagógico & Ensino (3)</button>
+          <button type="button" class="doc-filter-btn" data-filter="normas">Normas & Regimentos (2)</button>
+          <button type="button" class="doc-filter-btn" data-filter="cooperativa">Cooperativa & Famílias (2)</button>
+        </div>
+
+        <!-- Grade de Documentos Interativos -->
+        <div class="doc-grid">
+
+          <!-- 1. PPP -->
+          <div class="doc-card" data-category="pedagogico">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: var(--cblue-100); color: var(--cblue-800);">📘</div>
+                <div>
+                  <span class="team-role-tag role-blue">Pedagógico</span>
+                  <h3 class="doc-card-title">Projeto Político-Pedagógico (PPP)</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Diretrizes fundamentais da proposta sociointeracionista da Escola Coopep, objetivos formativos da Educação Infantil e Ensino Fundamental, critérios avaliativos e metodologia construtivista.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 Vigência 2023/2024</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">🏛️ DRE Piracicaba</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2024/02/PPP-Escola-Coopep-2023_2024-2.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar PDF Oficial
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Regimento Escolar -->
+          <div class="doc-card" data-category="normas">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: var(--corange-100); color: var(--corange-800);">📜</div>
+                <div>
+                  <span class="team-role-tag role-orange">Normas & Legislação</span>
+                  <h3 class="doc-card-title">Regimento Escolar 2024</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Regulamentação formal e disciplinar da Escola Coopep: organização administrativa, corpo docente, direitos e deveres dos estudantes, critérios de frequência e convívio escolar ético.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 Vigência 2024</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">⚖️ Normativo Oficial</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2024/02/Regimento-escolar-2024-Cooperativa-Educacional-de-Piracicaba.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn" style="background: var(--corange-600);">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar PDF Oficial
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Estatuto Social (JUCESP) -->
+          <div class="doc-card" data-category="cooperativa">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: var(--cgreen-100); color: var(--cgreen-800);">🤝</div>
+                <div>
+                  <span class="team-role-tag role-green">Cooperativa Mantenedora</span>
+                  <h3 class="doc-card-title">Estatuto Social COOPEP (JUCESP)</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Documento jurídico fundamental registrado na Junta Comercial de São Paulo (JUCESP). Define a estrutura societária, funcionamento das Assembleias, Conselhos e modelo sem fins lucrativos.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 Registrado JUCESP</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">⚖️ Lei 5.764/1971</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2022/08/Estatuto-2022-Registrado-JUCESP_compressed.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn" style="background: var(--cgreen-700);">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar Estatuto Registrado
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Manual do Cooperado -->
+          <div class="doc-card" data-category="cooperativa">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: #fef08a; color: #854d0e;">📖</div>
+                <div>
+                  <span class="team-role-tag role-yellow">Famílias Cooperadas</span>
+                  <h3 class="doc-card-title">Manual do Cooperado</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Guia detalhado para mães, pais e responsáveis: como participar ativamente das Assembleias, comissões voluntárias, rateio transparente de custos anuais e gestão colaborativa da escola.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 Versão Vigente</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">💡 Guia Prático</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2023/03/manual-do-cooperado_versao-virtual-2023-2.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn" style="background: var(--slate-800);">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar Manual do Cooperado
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Manual do Estudante -->
+          <div class="doc-card" data-category="pedagogico">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: var(--cblue-100); color: var(--cblue-800);">🎒</div>
+                <div>
+                  <span class="team-role-tag role-blue">Rotina Escolar</span>
+                  <h3 class="doc-card-title">Manual do Estudante 2025/2026</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Orientações práticas para o dia a dia na chácara: horários de entrada e saída, cuidados nos espaços ao ar livre, lanches saudáveis, uniforme escolar e canais de comunicação com a equipe.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 2025 / 2026</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">🎒 Dia a Dia</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2025/04/manual-estudante-2025-site.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar Manual do Estudante
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Calendário Escolar 2026 -->
+          <div class="doc-card" data-category="normas">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: var(--cgreen-100); color: var(--cgreen-800);">🗓️</div>
+                <div>
+                  <span class="team-role-tag role-green">Planejamento Letivo</span>
+                  <h3 class="doc-card-title">Calendário Escolar 2026</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Cronograma completo do ano letivo de 2026: início e término das aulas, férias, recessos, datas das assembleias de cooperados, reuniões de pais e mestres e eventos tradicionais da chácara.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 Ano Letivo 2026</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">🗓️ 200 Dias Letivos</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2026/01/Calendario-2026.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn" style="background: var(--cgreen-700);">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar Calendário 2026
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Lista de Materiais -->
+          <div class="doc-card" data-category="pedagogico">
+            <div>
+              <div class="doc-card-top">
+                <div class="doc-icon-box" style="background: var(--corange-100); color: var(--corange-800);">✏️</div>
+                <div>
+                  <span class="team-role-tag role-orange">Materiais & Livros</span>
+                  <h3 class="doc-card-title">Guia e Lista de Materiais 2026</h3>
+                </div>
+              </div>
+              <p class="doc-card-desc">
+                Instruções para aquisição dos livros didáticos e materiais pedagógicos por ano escolar (Educação Infantil e Ensino Fundamental), com orientações de entrega e descontos especiais.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-meta-pill">📅 Ano Letivo 2026</span>
+                <span class="doc-meta-pill">📄 Formato PDF</span>
+                <span class="doc-meta-pill">✏️ Todas as Séries</span>
+              </div>
+            </div>
+            <div class="doc-card-actions">
+              <a href="https://escolacoopep.com.br/wp-content/uploads/2021/02/como-comprar-os-materiais.pdf"
+                target="_blank" rel="noopener noreferrer" class="doc-download-btn" style="background: var(--corange-600);">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                Baixar Guia de Materiais
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bloco de Apoio da Secretaria -->
+        <div class="team-cta-banner">
+          <div class="team-cta-content">
+            <h4>Precisa de uma 2ª via, histórico ou declaração de matrícula?</h4>
+            <p>
+              Nossa equipe de secretaria escolar atende de segunda a sexta-feira, das 07h às 17h, com suporte direto pelo WhatsApp ou presencialmente na chácara.
+            </p>
+          </div>
+          <a href="https://wa.me/551934243730" target="_blank" class="btn-primary"
+            style="background: var(--corange-500); white-space: nowrap;">
+            <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i>
+            Falar com a Secretaria
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO: GOVERNANÇA COOPERATIVA E TRANSPARÊNCIA -->
+    <section class="section-spacing" id="governanca" style="background: var(--cream-100); border-bottom: 1px solid var(--cblue-100);">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-badge badge-blue">
+            <span>🏛️</span> Gestão Compartilhada
+          </span>
+          <h2 class="section-title">
+            Transparência e Instâncias de Decisão
+          </h2>
+          <p class="section-subtitle">
+            Como funciona a estrutura de governança democrática da Cooperativa Educacional de Piracicaba, regida pela Lei Federal nº 5.764/1971.
+          </p>
+        </div>
+
+        <div class="governance-grid">
+
+          <div class="governance-card">
+            <h4>
+              <span>🗳️</span> Assembleia Geral
+            </h4>
+            <p>
+              Órgão supremo de deliberação. Todas as famílias cooperadas têm voz ativa e direito a 1 voto para aprovação de contas, reformas e planejamento anual.
+            </p>
+          </div>
+
+          <div class="governance-card">
+            <h4>
+              <span>🤝</span> Conselho de Administração
+            </h4>
+            <p>
+              Formado por pais eleitos democraticamente para mandatos regulares, responsável pelo planejamento estratégico e execução administrativa em conjunto com a gerência.
+            </p>
+          </div>
+
+          <div class="governance-card">
+            <h4>
+              <span>📊</span> Conselho Fiscal
+            </h4>
+            <p>
+              Órgão independente formado exclusivamente por pais cooperados, encarregado da fiscalização contínua de contas, orçamentos e auditorias da cooperativa.
+            </p>
+          </div>
+
+          <div class="governance-card">
+            <h4>
+              <span>🏫</span> Conselho de Escola
+            </h4>
+            <p>
+              Instância consultiva e deliberativa pedagógica que reúne direção, coordenação, professores e famílias para o constante aperfeiçoamento do ambiente escolar.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Coluna 1: Sobre a Cooperativa -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div
+              style="width: 38px; height: 38px; background: var(--cblue-800); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--cgreen-400);">
+              <i data-lucide="trees" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <strong
+                style="font-family: var(--font-title); font-size: 1.15rem; color: var(--white); display: block;">Escola
+                Coopep</strong>
+              <span style="font-size: 0.72rem; color: var(--cgreen-400);">Cooperativa Educacional de Piracicaba</span>
+            </div>
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.6; color: #94a3b8;">
+            Fundada em 1989 (fundação da cooperativa em 1992). Uma cooperativa sem fins lucrativos gerida por pais, unindo natureza, sólida proposta
+            sociointeracionista e carinho pedagógico.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://wa.me/551934243730" target="_blank" class="footer-icon-btn" title="WhatsApp"><i
+                data-lucide="message-circle" style="width: 16px; height: 16px;"></i></a>
+            <a href="mailto:secretaria@escolacoopep.com.br" class="footer-icon-btn" title="E-mail"><i data-lucide="mail"
+                style="width: 16px; height: 16px;"></i></a>
+            <a href="https://maps.google.com/?q=Av.+Dois+Córregos,+3526+-+Piracicaba" target="_blank"
+              class="footer-icon-btn" title="Mapa"><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: A Escola -->
+        <div>
+          <h5 class="footer-col-title">A Escola</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html#chacara">A Chácara de 6.000 m²</a></li>
+            <li><a href="index.html#escola">Proposta Pedagógica</a></li>
+            <li><a href="index.html#ciclos">Educação Infantil</a></li>
+            <li><a href="index.html#ciclos">Ensino Fundamental</a></li>
+            <li><a href="index.html#ciclos">Período Integral</a></li>
+            <li><a href="index.html#equipe">Equipe & Educadores</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: A Cooperativa & Documentos -->
+        <div>
+          <h5 class="footer-col-title">Transparência</h5>
+          <ul class="footer-links-list">
+            <li><a href="documentos.html#pedagogico">Projeto Político-Pedagógico</a></li>
+            <li><a href="documentos.html#central-documentos">Regimento Escolar 2024</a></li>
+            <li><a href="documentos.html#central-documentos">Estatuto Social JUCESP</a></li>
+            <li><a href="documentos.html#central-documentos">Manual do Cooperado</a></li>
+            <li><a href="documentos.html#governanca">Conselhos & Governança</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contato & Horários -->
+        <div>
+          <h5 class="footer-col-title">Atendimento</h5>
+          <p style="font-size: 0.82rem; line-height: 1.5; margin-bottom: 8px;">
+            Av. Dois Córregos, 3526<br>
+            Piracicaba - SP<br>
+            CEP 13420-835
+          </p>
+          <p style="font-weight: 700; color: var(--white); font-size: 0.85rem;">
+            Tel: (19) 3424-3730
+          </p>
+          <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 4px;">
+            Segunda a Sexta: 07h às 17h
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 Escola Coopep - Cooperativa Educacional de Piracicaba. Todos os direitos reservados.</p>
+        <p>Educar com afeto, natureza e participação familiar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT NATIVO -->
+  <script src="script.js"></script>
+</body>
+
+</html>
