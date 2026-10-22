@@ -1609,6 +1609,337 @@ textarea {
 }
 
 /* ========================================================
+   SEÇÃO: NOSSA EQUIPE & EDUCADORES
+   ======================================================== */
+.team-page-hero {
+  background: radial-gradient(circle at 10% 20%, rgba(219, 234, 254, 0.45) 0%, rgba(255, 247, 237, 0.5) 90%);
+  padding: 55px 0 35px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--cblue-100);
+}
+
+.team-preview-cta {
+  background: var(--white);
+  border: 2px dashed var(--cblue-300);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.team-intro-card {
+  background: var(--white);
+  border: 1.5px solid var(--cblue-200);
+  border-radius: var(--radius-xl);
+  padding: 24px 28px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow-sm);
+  border-left: 6px solid var(--cblue-700);
+}
+
+.team-intro-card p {
+  font-size: 0.94rem;
+  color: var(--slate-700);
+  line-height: 1.6;
+}
+
+.team-intro-highlight {
+  font-size: 0.82rem;
+  color: var(--cblue-800);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Filtros por Categoria */
+.team-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.team-filter-btn {
+  font-family: var(--font-title);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  background: var(--white);
+  border: 1.5px solid var(--cblue-100);
+  color: var(--slate-600);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.team-filter-btn:hover {
+  background: var(--cblue-50);
+  color: var(--cblue-800);
+  border-color: var(--cblue-300);
+}
+
+.team-filter-btn.active {
+  background: var(--cblue-800);
+  color: var(--white);
+  border-color: var(--cblue-800);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+}
+
+/* Grid de Membros da Equipe */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.team-card {
+  background: var(--white);
+  border: 2px solid var(--cblue-100);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--cblue-400);
+}
+
+.team-card.management {
+  border: 2px solid var(--cblue-500);
+  background: linear-gradient(180deg, #ffffff 0%, var(--cblue-50) 100%);
+}
+
+.team-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.team-icon-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.team-role-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+.role-blue {
+  background: var(--cblue-100);
+  color: var(--cblue-800);
+}
+
+.role-orange {
+  background: var(--corange-100);
+  color: var(--corange-800);
+}
+
+.role-green {
+  background: var(--cgreen-100);
+  color: var(--cgreen-800);
+}
+
+.role-yellow {
+  background: #fef08a;
+  color: #854d0e;
+}
+
+.role-purple {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.team-card-name {
+  font-family: var(--font-title);
+  font-size: 1.22rem;
+  color: var(--cblue-950);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.team-subrole {
+  font-size: 0.82rem;
+  color: var(--slate-600);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.degree-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--corange-100);
+  color: var(--corange-800);
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.team-credentials-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--slate-700);
+  line-height: 1.45;
+}
+
+.team-credentials-list li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.team-credentials-list li::before {
+  content: "•";
+  position: absolute;
+  left: 3px;
+  color: var(--cblue-600);
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Auxiliares e Apoio */
+.aux-pill-item {
+  background: var(--white);
+  border: 1.5px solid var(--cblue-100);
+  border-radius: var(--radius-lg);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.aux-pill-item:hover {
+  border-color: var(--cgreen-400);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.aux-pill-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background: var(--cgreen-100);
+  color: var(--cgreen-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.aux-pill-item strong {
+  font-family: var(--font-title);
+  font-size: 0.9rem;
+  color: var(--cblue-950);
+}
+
+.aux-pill-item span {
+  font-size: 0.72rem;
+  color: var(--slate-500);
+  display: block;
+}
+
+.support-card {
+  background: var(--white);
+  border: 1.5px solid var(--cblue-100);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.support-card:hover {
+  border-color: var(--corange-300);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.support-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+/* Banner de Convite Pedagógico */
+.team-cta-banner {
+  background: linear-gradient(135deg, var(--cblue-900), var(--cblue-950));
+  border-radius: var(--radius-xl);
+  padding: 28px 24px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.team-cta-content h4 {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.team-cta-content p {
+  font-size: 0.9rem;
+  color: var(--cblue-100);
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+/* ========================================================
    MEDIA QUERIES RESPONSIVAS (Mobile -> Tablet -> Desktop)
    ======================================================== */
 @media (min-width: 640px) {
@@ -1633,6 +1964,14 @@ textarea {
   }
 
   .cycle-tags-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1699,6 +2038,21 @@ textarea {
 
   .comunicacao-grid {
     grid-template-columns: 1.25fr 0.95fr;
+  }
+
+  .team-pillars-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-cta-banner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 32px 40px;
   }
 
   .visita-banner {

@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa Equipe | Escola Coopep Piracicaba</title>
+  <meta name="description" content="Conheça a equipe pedagógica e o corpo docente da Escola Coopep em Piracicaba. Formação de excelência, gestão democrática e pedagogia sociointeracionista.">
+
+  <!-- Google Fonts: Fredoka (títulos lúdicos) & Plus Jakarta Sans (leitura limpa) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Folha de Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BARRA DE TOPO AFETIVA -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-pill">
+          <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+          Portas abertas para novas famílias!
+        </span>
+        <span class="top-link">
+          <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--cgreen-400);"></i>
+          Av. Dois Córregos, 3526 - Piracicaba / SP
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://wa.me/551934243730" target="_blank" rel="noopener noreferrer" class="top-link">
+          <i data-lucide="message-circle" style="width: 14px; height: 14px; color: var(--cgreen-400);"></i>
+          WhatsApp: (19) 3424-3730
+        </a>
+        <a href="index.html#visita" class="top-link highlight">
+          <i data-lucide="coffee" style="width: 14px; height: 14px;"></i>
+          Agendar um Café Conosco
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="main-header">
+    <div class="container header-inner">
+
+      <!-- Logotipo Coopep -->
+      <a href="index.html" class="brand-logo" aria-label="Escola Coopep Página Inicial">
+        <div class="brand-icon">
+          <i data-lucide="trees" style="width: 26px; height: 26px;"></i>
+          <span class="brand-dot"></span>
+        </div>
+        <div class="brand-text">
+          <h1>ESCOLA <span>COOPEP</span></h1>
+          <p class="brand-tagline">
+            <span class="green-dot"></span>
+            Cooperativa de Pais • Piracicaba
+          </p>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <a href="index.html#escola" class="nav-link">A Escola</a>
+        <a href="index.html#chacara" class="nav-link" style="color: var(--cgreen-700);">🌿 A Chácara</a>
+        <a href="index.html#ciclos" class="nav-link">Infantil & Fundamental</a>
+        <a href="index.html#cooperativa" class="nav-link">O Jeito Cooperativo</a>
+        <a href="index.html#equipe" class="nav-link">Nossa Equipe</a>
+
+        <!-- Link Dinâmico (Mural & Jornal) -->
+        <a href="index.html#comunicacao-section" id="nav-comunicacao-link" class="nav-pill-link">
+          <i data-lucide="newspaper" style="width: 16px; height: 16px;"></i>
+          Jornal & Notícias
+        </a>
+      </nav>
+
+      <!-- Botões de Ação -->
+      <div class="header-actions">
+        <a href="https://wa.me/551934243730" target="_blank" class="icon-action-btn" title="Conversar no WhatsApp">
+          <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+        </a>
+        <a href="index.html#visita" class="btn-primary">
+          <i data-lucide="calendar-heart" style="width: 17px; height: 17px;"></i>
+          Agende uma Visita
+        </a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-menu-toggle" id="mobile-toggle-btn" aria-label="Abrir menu de navegação">
+        <i data-lucide="menu" id="menu-icon-bars" style="width: 24px; height: 24px;"></i>
+        <i data-lucide="x" id="menu-icon-close" style="width: 24px; height: 24px; display: none;"></i>
+      </button>
+
+    </div>
+
+    <!-- Gaveta Mobile -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-links">
+        <a href="index.html#escola" class="mobile-link">A Escola e Valores</a>
+        <a href="index.html#chacara" class="mobile-link" style="color: var(--cgreen-700);">A Chácara (6.000 m²) 🌳</a>
+        <a href="index.html#ciclos" class="mobile-link">Infantil, Fundamental & Integral</a>
+        <a href="index.html#cooperativa" class="mobile-link">A Cooperativa de Famílias</a>
+        <a href="index.html#equipe" class="mobile-link">Nossa Equipe & Educadores</a>
+        <a href="index.html#comunicacao-section" class="mobile-link"
+          style="background: var(--corange-50); color: var(--corange-700);">
+          <span>📰 Jornal & Notícias</span>
+          <span
+            style="font-size: 0.65rem; background: var(--corange-200); padding: 2px 6px; border-radius: 9999px;">Ativo</span>
+        </a>
+      </div>
+      <a href="index.html#visita" class="btn-primary mobile-link"
+        style="display: flex; justify-content: center; width: 100%; margin-bottom: 10px;">
+        Agendar Visita com a Família
+      </a>
+      <a href="https://wa.me/551934243730" target="_blank" class="btn-secondary"
+        style="display: flex; justify-content: center; width: 100%;">
+        <i data-lucide="message-circle" style="width: 16px; height: 16px; color: var(--cgreen-600);"></i>
+        WhatsApp Secretaria
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO DEDICADO DA EQUIPE -->
+    <section class="team-page-hero">
+      <div class="container">
+        <span class="section-badge badge-blue">
+          <span>👥</span> Corpo Docente & Administrativo
+        </span>
+        <h1 class="hero-title" style="font-size: 2.3rem; margin-bottom: 14px;">
+          Nossa Equipe: Olhar atento, formação sólida e afeto
+        </h1>
+        <p class="section-subtitle" style="margin: 0 auto; max-width: 720px;">
+          Conheça quem acolhe, ensina e acompanha as crianças na Escola Coopep em Piracicaba. Profissionais com pós-doutorado, doutorados e especializações dedicados à infância.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: NOSSA EQUIPE & EDUCADORES -->
+    <section class="section-spacing" id="equipe" style="background: rgba(239, 246, 255, 0.45); border-bottom: 1px solid var(--cblue-100);">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-badge badge-blue">
+            <span>👥</span> Nossa Equipe
+          </span>
+          <h2 class="section-title">
+            Qualificação, ambiente democrático e dedicação de verdade
+          </h2>
+          <p class="section-subtitle">
+            Conheça os profissionais que acolhem e educam nossos estudantes num ambiente participativo e humano, seguindo todas as exigências do MEC e da Diretoria Regional de Ensino de Piracicaba.
+          </p>
+        </div>
+
+        <!-- Box Oficial Coopep de Compromisso com a Qualificação -->
+        <div class="team-intro-card">
+          <p>
+            <strong>A Escola Coopep investe na qualificação dos profissionais que nela atuam,</strong> buscando assegurar condições de trabalho adequadas num ambiente democrático e participativo.
+          </p>
+          <p style="font-size: 0.88rem; color: var(--slate-600); margin: 0;">
+            A equipe pedagógica da Escola — direção, coordenação, professores e auxiliares — é formada por profissionais contratados, e a Escola segue todas as exigências educacionais formais exigidas pelo MEC e regulamentadas pela Diretoria Regional de Ensino de Piracicaba.
+          </p>
+          <div class="team-intro-highlight">
+            <span>🏛️ Diretoria Regional de Ensino de Piracicaba</span>
+            <span>•</span>
+            <span>📜 Exigências Formais do MEC</span>
+            <span>•</span>
+            <span>🤝 Gestão Democrática e Participativa</span>
+          </div>
+        </div>
+
+        <!-- Filtros por Núcleo -->
+        <div class="team-filter-bar">
+          <button type="button" class="team-filter-btn active" data-filter="all">Todos os Profissionais (38)</button>
+          <button type="button" class="team-filter-btn" data-filter="gestao">Gestão Pedagógica (3)</button>
+          <button type="button" class="team-filter-btn" data-filter="polivalentes">Professores Polivalentes (8)</button>
+          <button type="button" class="team-filter-btn" data-filter="especialistas">Professores Especialistas (12)</button>
+          <button type="button" class="team-filter-btn" data-filter="auxiliares">Professoras Auxiliares (8)</button>
+          <button type="button" class="team-filter-btn" data-filter="apoio">Secretaria & Apoio (7)</button>
+        </div>
+
+        <!-- Grid de Todos os Membros da Equipe Oficial -->
+        <div class="team-grid">
+
+          <!-- ================= GESTÃO PEDAGÓGICA ================= -->
+
+          <!-- Shirlei Debussi Pissaia -->
+          <div class="team-card management" data-category="gestao">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-orange">Gestão Pedagógica</span>
+                <h3 class="team-card-name">Shirlei Debussi Pissaia</h3>
+                <div class="team-subrole">Direção Pedagógica</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--corange-100); color: var(--corange-800);">🏛️</div>
+            </div>
+            <div class="degree-badge">Mestra em Educação</div>
+            <ul class="team-credentials-list">
+              <li>Psicóloga e bacharel em Psicologia com experiência em processos formativos e inclusão escolar há 20 anos.</li>
+              <li>Mestra em Educação com foco na formação docente e organização curricular.</li>
+              <li>Atuou com direção escolar de 2011 a 2021 em outras instituições. Em 2022, começou a fazer parte da Escola Coopep como psicóloga e orientadora educacional, acompanhando principalmente os estudantes de necessidades especiais e desenvolvendo o Projeto de Vida.</li>
+            </ul>
+          </div>
+
+          <!-- Vanessa Minuzzi Bidinoto -->
+          <div class="team-card management" data-category="gestao">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-blue">Gestão Pedagógica</span>
+                <h3 class="team-card-name">Vanessa Minuzzi Bidinoto</h3>
+                <div class="team-subrole">Coordenação da Educação Infantil e Ensino Fundamental (anos iniciais e finais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cblue-100); color: var(--cblue-800);">🎓</div>
+            </div>
+            <div class="degree-badge">Pós-Doutora na ESALQ/USP • Doutora pela UNIMEP</div>
+            <ul class="team-credentials-list">
+              <li>Pós-Doutora na linha de pesquisa em Educação Inclusiva pela ESALQ/USP.</li>
+              <li>Doutora e Mestra em Educação pela UNIMEP.</li>
+              <li>Licenciada em Pedagogia pela UNIP (Universidade Paulista) de Piracicaba.</li>
+              <li>Licenciada em Ciências Biológicas pela Universidade Regional Integrada do Alto Uruguai e das Missões.</li>
+              <li>Bacharel em Psicologia pela Faculdade Anhanguera de Piracicaba.</li>
+              <li>Pós-graduada em Gestão Escolar, Orientação e Supervisão e em Psicopedagogia Institucional pela Faculdade de Educação São Luís.</li>
+              <li>Pós-graduada em Educação Especial e Inclusão pela UNINTER.</li>
+            </ul>
+          </div>
+
+          <!-- Carolina José Maria -->
+          <div class="team-card management" data-category="gestao">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Gestão Pedagógica</span>
+                <h3 class="team-card-name">Carolina José Maria</h3>
+                <div class="team-subrole">Orientadora Educacional da Educação Infantil e Ensino Fundamental (anos iniciais e finais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">🧭</div>
+            </div>
+            <div class="degree-badge">Doutora em Educação UNIMEP • Mestra UNESP</div>
+            <ul class="team-credentials-list">
+              <li>Doutora em Educação pela UNIMEP.</li>
+              <li>Mestra em Educação para Ciências na Área de Ensino de Ciências e Matemática pela UNESP.</li>
+              <li>Licenciada em Pedagogia pela UNINTER (Centro Universitário Internacional).</li>
+              <li>Licenciada em Ciências pela Universidade Metodista de Piracicaba – UNIMEP.</li>
+              <li>Especialização em Orientação, Supervisão e Gestão Escolar.</li>
+            </ul>
+          </div>
+
+          <!-- ================= PROFESSORES POLIVALENTES ================= -->
+
+          <!-- Mariana Gonçalves de Souza Guimarães -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-orange">Educação Infantil</span>
+                <h3 class="team-card-name">Mariana Gonçalves de Souza Guimarães</h3>
+                <div class="team-subrole">Professora da Educação Infantil – G2 e G3</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--corange-100); color: var(--corange-800);">🐣</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Faculdade Anhanguera de Piracicaba.</li>
+            </ul>
+          </div>
+
+          <!-- Aline Piovesani Sotto -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-orange">Educação Infantil</span>
+                <h3 class="team-card-name">Aline Piovesani Sotto</h3>
+                <div class="team-subrole">Professora da Educação Infantil – G4</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--corange-100); color: var(--corange-800);">🐥</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Faculdade Anhanguera de Piracicaba.</li>
+            </ul>
+          </div>
+
+          <!-- Emanuelle Beatriz Innocente Morato Gutierre Bertoluci -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-orange">Educação Infantil</span>
+                <h3 class="team-card-name">Emanuelle Beatriz Innocente Morato Gutierre Bertoluci</h3>
+                <div class="team-subrole">Professora da Educação Infantil – G5</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--corange-100); color: var(--corange-800);">🌼</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Faculdade Santa Cecília.</li>
+              <li>Licenciada em Matemática pela Faculdade Santa Cecília.</li>
+            </ul>
+          </div>
+
+          <!-- Luana Cristina Balego -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Ensino Fundamental I</span>
+                <h3 class="team-card-name">Luana Cristina Balego</h3>
+                <div class="team-subrole">Professora do 1º ano</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">📖</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Faculdade Anhanguera de Piracicaba.</li>
+            </ul>
+          </div>
+
+          <!-- Damiana Estela da Silva Luiz Barros -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Ensino Fundamental I</span>
+                <h3 class="team-card-name">Damiana Estela da Silva Luiz Barros</h3>
+                <div class="team-subrole">Professora do 2º ano</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">✏️</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Universidade Pitágoras Unopar Anhanguera.</li>
+            </ul>
+          </div>
+
+          <!-- Camilla Telles Moraes -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Ensino Fundamental I</span>
+                <h3 class="team-card-name">Camilla Telles Moraes</h3>
+                <div class="team-subrole">Professora do 3º ano</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">📚</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pelo Centro Universitário de Santo André.</li>
+              <li>Pós-graduação em Educação Infantil pela Faculdade de Conchas.</li>
+              <li>Pós-graduação em Psicopedagogia Institucional e Clínica pela Faculdade de Conchas.</li>
+            </ul>
+          </div>
+
+          <!-- Amanda Bullo Trevellin -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Ensino Fundamental I</span>
+                <h3 class="team-card-name">Amanda Bullo Trevellin</h3>
+                <div class="team-subrole">Professora do 4º ano</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">💡</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Universidade Metodista de Piracicaba – UNIMEP.</li>
+            </ul>
+          </div>
+
+          <!-- Fabiana Barreto de Souza -->
+          <div class="team-card" data-category="polivalentes">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Ensino Fundamental I</span>
+                <h3 class="team-card-name">Fabiana Barreto de Souza</h3>
+                <div class="team-subrole">Professora do 5º ano</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">🌱</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela Faculdade Anhanguera de Piracicaba.</li>
+            </ul>
+          </div>
+
+          <!-- ================= PROFESSORES ESPECIALISTAS ================= -->
+
+          <!-- Vivian Zambello dos Santos -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-blue">Língua Inglesa</span>
+                <h3 class="team-card-name">Vivian Zambello dos Santos</h3>
+                <div class="team-subrole">Professora de Língua Inglesa (Educação Infantil e Anos Iniciais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cblue-100); color: var(--cblue-800);">🇬🇧</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela UNISEB – Ribeirão Preto.</li>
+              <li>Pós-graduada em Psicopedagogia Clínica pela Faculdade de Tecnologia, Ciências e Educação – FATECE.</li>
+            </ul>
+          </div>
+
+          <!-- Vinicius de Oliveira Santos Duarte -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-blue">Língua Inglesa</span>
+                <h3 class="team-card-name">Vinicius de Oliveira Santos Duarte</h3>
+                <div class="team-subrole">Professor de Língua Inglesa (Anos Finais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cblue-100); color: var(--cblue-800);">🌍</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciado em Letras pela Universidade Metodista de Piracicaba – UNIMEP.</li>
+            </ul>
+          </div>
+
+          <!-- Danuta Hilária Rodrigues -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-yellow">História</span>
+                <h3 class="team-card-name">Danuta Hilária Rodrigues</h3>
+                <div class="team-subrole">Professora de História</div>
+              </div>
+              <div class="team-icon-circle" style="background: #fef08a; color: #854d0e;">🏛️</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em História pela Universidade Metodista de Piracicaba – UNIMEP.</li>
+            </ul>
+          </div>
+
+          <!-- Cristiane de Oliveira Corrêa -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Ciências</span>
+                <h3 class="team-card-name">Cristiane de Oliveira Corrêa</h3>
+                <div class="team-subrole">Professora de Ciências</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">🔬</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Ciências Biológicas pela Universidade Paulista – UNIP.</li>
+            </ul>
+          </div>
+
+          <!-- Ricardo Giamlourenço Lante -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-green">Geografia</span>
+                <h3 class="team-card-name">Ricardo Giamlourenço Lante</h3>
+                <div class="team-subrole">Professor de Geografia</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cgreen-100); color: var(--cgreen-800);">🧭</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciado em Geografia pela Universidade Estadual Paulista "Júlio de Mesquita Filho" – UNESP.</li>
+            </ul>
+          </div>
+
+          <!-- Taitson Alberto Leal dos Santos -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-purple">Filosofia</span>
+                <h3 class="team-card-name">Taitson Alberto Leal dos Santos</h3>
+                <div class="team-subrole">Professor de Filosofia</div>
+              </div>
+              <div class="team-icon-circle" style="background: #f3e8ff; color: #6b21a8;">💭</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciado em Filosofia pela Universidade Metodista de Piracicaba – UNIMEP.</li>
+            </ul>
+          </div>
+
+          <!-- Rafael Ribeiro Dias Mercadante -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-orange">Educação Física</span>
+                <h3 class="team-card-name">Rafael Ribeiro Dias Mercadante</h3>
+                <div class="team-subrole">Professor de Educação Física</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--corange-100); color: var(--corange-800);">⚽</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciado em Educação Física pelas Faculdades Integradas Claretianas.</li>
+            </ul>
+          </div>
+
+          <!-- Ana Paula Ibañez -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-yellow">Arte</span>
+                <h3 class="team-card-name">Ana Paula Ibañez</h3>
+                <div class="team-subrole">Professora de Arte (Educação Infantil e Anos Iniciais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: #fef08a; color: #854d0e;">🎨</div>
+            </div>
+            <div class="degree-badge">Doutora e Mestra em Artes da Cena pela UNICAMP</div>
+            <ul class="team-credentials-list">
+              <li>Doutora e Mestra em Artes da Cena pela Faculdade Unicamp.</li>
+              <li>Bacharel em Artes Cênicas pela Faculdade Unicamp.</li>
+              <li>Licenciada em Pedagogia e em Artes Visuais pelo Centro Universitário Claretiano.</li>
+            </ul>
+          </div>
+
+          <!-- Luiz Antonio Sardinha -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-yellow">Arte</span>
+                <h3 class="team-card-name">Luiz Antonio Sardinha</h3>
+                <div class="team-subrole">Professor de Arte (Anos Finais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: #fef08a; color: #854d0e;">🖌️</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciado em Pedagogia pela Uninove (Universidade Nove de Julho).</li>
+              <li>Licenciado em Educação Artística pela UNESP.</li>
+              <li>Pós-graduação em Arte na Educação pela Faculdade Campos Elíseos.</li>
+            </ul>
+          </div>
+
+          <!-- Débora Pessoa Barbosa de Oliveira -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-yellow">Música</span>
+                <h3 class="team-card-name">Débora Pessoa Barbosa de Oliveira</h3>
+                <div class="team-subrole">Professora de Música (Educação Infantil, Anos Iniciais e Anos Finais)</div>
+              </div>
+              <div class="team-icon-circle" style="background: #fef08a; color: #854d0e;">🎵</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Pedagogia pela UNIVESP – São Paulo.</li>
+              <li>Licenciada em Música pela Universidade Claretiano.</li>
+            </ul>
+          </div>
+
+          <!-- Vinicius Matias Pires -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-blue">Matemática</span>
+                <h3 class="team-card-name">Vinicius Matias Pires</h3>
+                <div class="team-subrole">Professor de Matemática</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cblue-100); color: var(--cblue-800);">📐</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciado em Matemática pela UNIFEO.</li>
+              <li>Licenciado em Química pela UNIMEP.</li>
+            </ul>
+          </div>
+
+          <!-- Ana Caroline Franco -->
+          <div class="team-card" data-category="especialistas">
+            <div class="team-card-header">
+              <div>
+                <span class="team-role-tag role-blue">Língua Portuguesa</span>
+                <h3 class="team-card-name">Ana Caroline Franco</h3>
+                <div class="team-subrole">Professora de Língua Portuguesa e Redação</div>
+              </div>
+              <div class="team-icon-circle" style="background: var(--cblue-100); color: var(--cblue-800);">✍️</div>
+            </div>
+            <ul class="team-credentials-list">
+              <li>Licenciada em Letras – Língua Portuguesa pela Universidade Metodista de Piracicaba – UNIMEP.</li>
+            </ul>
+          </div>
+
+          <!-- ================= PROFESSORAS AUXILIARES ================= -->
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Ana Cecy Ramos De Oliveira</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Elisa Bette Adriana Ferreira</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Evellyn Camilly de Lima Melo</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Fernanda Macedo Garcia</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Gabriele Colletti Cantero</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Izabella Amorim de Souza</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Michele Fernanda Santos Matheus</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="auxiliares">
+            <div class="aux-pill-item" style="border: none; padding: 0; box-shadow: none;">
+              <div class="aux-pill-icon">👩‍🏫</div>
+              <div>
+                <strong>Thais Pereira Pelaes</strong>
+                <span>Professora Auxiliar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= FUNCIONÁRIOS / APOIO ================= -->
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: var(--cblue-100); color: var(--cblue-800);">📋</div>
+              <div>
+                <span class="team-role-tag role-blue">Secretaria</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Carla Andresa C. Martini</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Atendimento e Secretaria Escolar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: var(--corange-100); color: var(--corange-800);">💼</div>
+              <div>
+                <span class="team-role-tag role-orange">Setor Administrativo</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Susi Rufo</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Gestão Administrativa</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: var(--corange-100); color: var(--corange-800);">💼</div>
+              <div>
+                <span class="team-role-tag role-orange">Setor Administrativo</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Tayla Zarka Sotero de Lima</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Apoio Administrativo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: var(--cgreen-100); color: var(--cgreen-800);">🛠️</div>
+              <div>
+                <span class="team-role-tag role-green">Setor de Manutenção</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Salomão Alves da Silva</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Cuidado e infraestrutura da chácara</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: #fef08a; color: #854d0e;">🥣</div>
+              <div>
+                <span class="team-role-tag role-yellow">Cantina</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Bianca Rodrigues Kalil Carvalho</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Alimentação e Cantina</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: var(--cblue-100); color: var(--cblue-800);">✨</div>
+              <div>
+                <span class="team-role-tag role-blue">Serviços Gerais</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Benedita Francisca de J. A. Santos</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Zelo, higiene e cuidado dos espaços</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card" data-category="apoio">
+            <div class="support-card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="support-icon" style="background: var(--cblue-100); color: var(--cblue-800);">✨</div>
+              <div>
+                <span class="team-role-tag role-blue">Serviços Gerais</span>
+                <strong style="font-family: var(--font-title); font-size: 1.05rem; display: block; color: var(--cblue-950);">Renata Cristina Bezerro de Assis</strong>
+                <span style="font-size: 0.78rem; color: var(--slate-500);">Zelo, higiene e cuidado dos espaços</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner de Convite Pedagógico -->
+        <div class="team-cta-banner">
+          <div class="team-cta-content">
+            <h4>Venha conhecer uma escola com participação ativa das famílias!</h4>
+            <p>
+              Agende um horário para tomar um café conosco, conhecer nossos educadores de perto e sentir o clima acolhedor da nossa chácara em Piracicaba.
+            </p>
+          </div>
+          <a href="index.html#visita" class="btn-primary" style="background: var(--corange-500); white-space: nowrap;">
+            <i data-lucide="coffee" style="width: 16px; height: 16px;"></i>
+            Agendar Conversa com a Equipe
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Coluna 1: Sobre a Cooperativa -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div
+              style="width: 38px; height: 38px; background: var(--cblue-800); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--cgreen-400);">
+              <i data-lucide="trees" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <strong
+                style="font-family: var(--font-title); font-size: 1.15rem; color: var(--white); display: block;">Escola
+                Coopep</strong>
+              <span style="font-size: 0.72rem; color: var(--cgreen-400);">Cooperativa Educacional de Piracicaba</span>
+            </div>
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.6; color: #94a3b8;">
+            Fundada em 1989. Uma cooperativa sem fins lucrativos gerida por pais, unindo natureza, sólida proposta
+            sociointeracionista e carinho pedagógico.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://wa.me/551934243730" target="_blank" class="footer-icon-btn" title="WhatsApp"><i
+                data-lucide="message-circle" style="width: 16px; height: 16px;"></i></a>
+            <a href="mailto:secretaria@escolacoopep.com.br" class="footer-icon-btn" title="E-mail"><i data-lucide="mail"
+                style="width: 16px; height: 16px;"></i></a>
+            <a href="https://maps.google.com/?q=Av.+Dois+Córregos,+3526+-+Piracicaba" target="_blank"
+              class="footer-icon-btn" title="Mapa"><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: A Escola -->
+        <div>
+          <h5 class="footer-col-title">A Escola</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html#chacara">A Chácara de 6.000 m²</a></li>
+            <li><a href="index.html#escola">Proposta Pedagógica</a></li>
+            <li><a href="index.html#ciclos">Educação Infantil</a></li>
+            <li><a href="index.html#ciclos">Ensino Fundamental</a></li>
+            <li><a href="index.html#ciclos">Período Integral</a></li>
+            <li><a href="index.html#equipe">Equipe & Educadores</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: A Cooperativa -->
+        <div>
+          <h5 class="footer-col-title">A Cooperativa</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html#cooperativa">O Modelo Cooperativo</a></li>
+            <li><a href="index.html#cooperativa">Conselho de Administração</a></li>
+            <li><a href="index.html#cooperativa">Assembleias de Famílias</a></li>
+            <li><a href="index.html#cooperativa">Estatuto Social</a></li>
+            <li><a href="index.html#cooperativa">Portal do Cooperado</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contato & Horários -->
+        <div>
+          <h5 class="footer-col-title">Atendimento</h5>
+          <p style="font-size: 0.82rem; line-height: 1.5; margin-bottom: 8px;">
+            Av. Dois Córregos, 3526<br>
+            Piracicaba - SP<br>
+            CEP 13420-835
+          </p>
+          <p style="font-weight: 700; color: var(--white); font-size: 0.85rem;">
+            Tel: (19) 3424-3730
+          </p>
+          <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 4px;">
+            Segunda a Sexta: 07h às 17h
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 Escola Coopep - Cooperativa Educacional de Piracicaba. Todos os direitos reservados.</p>
+        <p>Educar com afeto, natureza e participação familiar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT NATIVO -->
+  <script src="script.js"></script>
+</body>
+
+</html>

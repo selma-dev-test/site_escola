@@ -1,5 +1,7 @@
 // Inicialização dos ícones Lucide
-lucide.createIcons();
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
 
 // 1. Menu Mobile Drawer
 const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
@@ -8,17 +10,19 @@ const menuBarsIcon = document.getElementById('menu-icon-bars');
 const menuCloseIcon = document.getElementById('menu-icon-close');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 
-mobileToggleBtn.addEventListener('click', () => {
-  const isOpen = mobileDrawer.classList.toggle('open');
-  menuBarsIcon.style.display = isOpen ? 'none' : 'block';
-  menuCloseIcon.style.display = isOpen ? 'block' : 'none';
-});
+if (mobileToggleBtn && mobileDrawer) {
+  mobileToggleBtn.addEventListener('click', () => {
+    const isOpen = mobileDrawer.classList.toggle('open');
+    if (menuBarsIcon) menuBarsIcon.style.display = isOpen ? 'none' : 'block';
+    if (menuCloseIcon) menuCloseIcon.style.display = isOpen ? 'block' : 'none';
+  });
+}
 
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
-    mobileDrawer.classList.remove('open');
-    menuBarsIcon.style.display = 'block';
-    menuCloseIcon.style.display = 'none';
+    if (mobileDrawer) mobileDrawer.classList.remove('open');
+    if (menuBarsIcon) menuBarsIcon.style.display = 'block';
+    if (menuCloseIcon) menuCloseIcon.style.display = 'none';
   });
 });
 
@@ -56,62 +60,75 @@ const comunicacaoGrid = document.getElementById('comunicacao-grid');
 const navComunicacaoLink = document.getElementById('nav-comunicacao-link');
 const mobileComunicacaoLink = document.getElementById('mobile-comunicacao-link');
 
-cmsTrigger.addEventListener('click', () => {
-  cmsModalPanel.classList.toggle('open');
-});
+if (cmsTrigger && cmsModalPanel) {
+  cmsTrigger.addEventListener('click', () => {
+    cmsModalPanel.classList.toggle('open');
+  });
+}
 
-cmsCloseBtn.addEventListener('click', () => {
-  cmsModalPanel.classList.remove('open');
-});
+if (cmsCloseBtn && cmsModalPanel) {
+  cmsCloseBtn.addEventListener('click', () => {
+    cmsModalPanel.classList.remove('open');
+  });
+}
 
 function updateCMSLayout() {
+  if (!toggleNewsCheck || !togglePaperCheck) return;
   const showNews = toggleNewsCheck.checked;
   const showPaper = togglePaperCheck.checked;
 
   // Visibilidade individual dos blocos
-  submoduleNoticias.style.display = showNews ? 'flex' : 'none';
-  submoduleJornal.style.display = showPaper ? 'block' : 'none';
+  if (submoduleNoticias) submoduleNoticias.style.display = showNews ? 'flex' : 'none';
+  if (submoduleJornal) submoduleJornal.style.display = showPaper ? 'block' : 'none';
 
   // Reorganização fluida de grid caso apenas 1 esteja ativo
-  if (showNews && !showPaper) {
-    comunicacaoGrid.style.gridTemplateColumns = '1fr';
-  } else if (!showNews && showPaper) {
-    comunicacaoGrid.style.gridTemplateColumns = '1fr';
-  } else if (window.innerWidth >= 992) {
-    comunicacaoGrid.style.gridTemplateColumns = '1.25fr 0.95fr';
+  if (comunicacaoGrid) {
+    if (showNews && !showPaper) {
+      comunicacaoGrid.style.gridTemplateColumns = '1fr';
+    } else if (!showNews && showPaper) {
+      comunicacaoGrid.style.gridTemplateColumns = '1fr';
+    } else if (window.innerWidth >= 992) {
+      comunicacaoGrid.style.gridTemplateColumns = '1.25fr 0.95fr';
+    }
   }
 
   // Se ambos estiverem desligados, ocultar a seção e o item de menu sem buracos
-  if (!showNews && !showPaper) {
-    comunicacaoSection.style.display = 'none';
-    navComunicacaoLink.style.display = 'none';
-    mobileComunicacaoLink.style.display = 'none';
-    cmsStatusBadge.textContent = 'Essencial (Sem Mídias)';
-    cmsStatusBadge.style.color = 'var(--slate-600)';
-    cmsStatusBadge.style.background = 'var(--cream-200)';
-  } else {
-    comunicacaoSection.style.display = 'block';
-    navComunicacaoLink.style.display = 'inline-flex';
-    mobileComunicacaoLink.style.display = 'flex';
-
-    if (showNews && showPaper) {
-      cmsStatusBadge.textContent = 'Completo';
-      cmsStatusBadge.style.color = 'var(--cgreen-700)';
-      cmsStatusBadge.style.background = 'var(--cgreen-100)';
-    } else if (showNews) {
-      cmsStatusBadge.textContent = 'Apenas Notícias';
-      cmsStatusBadge.style.color = 'var(--cblue-800)';
-      cmsStatusBadge.style.background = 'var(--cblue-100)';
+  if (comunicacaoSection && cmsStatusBadge) {
+    if (!showNews && !showPaper) {
+      comunicacaoSection.style.display = 'none';
+      if (navComunicacaoLink) navComunicacaoLink.style.display = 'none';
+      if (mobileComunicacaoLink) mobileComunicacaoLink.style.display = 'none';
+      cmsStatusBadge.textContent = 'Essencial (Sem Mídias)';
+      cmsStatusBadge.style.color = 'var(--slate-600)';
+      cmsStatusBadge.style.background = 'var(--cream-200)';
     } else {
-      cmsStatusBadge.textContent = 'Apenas Jornal';
-      cmsStatusBadge.style.color = 'var(--corange-800)';
-      cmsStatusBadge.style.background = 'var(--corange-100)';
+      comunicacaoSection.style.display = 'block';
+      if (navComunicacaoLink) navComunicacaoLink.style.display = 'inline-flex';
+      if (mobileComunicacaoLink) mobileComunicacaoLink.style.display = 'flex';
+
+      if (showNews && showPaper) {
+        cmsStatusBadge.textContent = 'Completo';
+        cmsStatusBadge.style.color = 'var(--cgreen-700)';
+        cmsStatusBadge.style.background = 'var(--cgreen-100)';
+      } else if (showNews) {
+        cmsStatusBadge.textContent = 'Apenas Notícias';
+        cmsStatusBadge.style.color = 'var(--cblue-800)';
+        cmsStatusBadge.style.background = 'var(--cblue-100)';
+      } else {
+        cmsStatusBadge.textContent = 'Apenas Jornal';
+        cmsStatusBadge.style.color = 'var(--corange-800)';
+        cmsStatusBadge.style.background = 'var(--corange-100)';
+      }
     }
   }
 }
 
-toggleNewsCheck.addEventListener('change', updateCMSLayout);
-togglePaperCheck.addEventListener('change', updateCMSLayout);
+if (toggleNewsCheck) {
+  toggleNewsCheck.addEventListener('change', updateCMSLayout);
+}
+if (togglePaperCheck) {
+  togglePaperCheck.addEventListener('change', updateCMSLayout);
+}
 
 // 4. Modais
 const modalNewspaper = document.getElementById('modal-newspaper');
@@ -120,33 +137,41 @@ const newsTitleTarget = document.getElementById('news-title-target');
 const newsBodyTarget = document.getElementById('news-body-target');
 
 function openNewspaperModal() {
-  modalNewspaper.classList.add('active');
-  document.body.style.overflow = 'hidden';
-  lucide.createIcons();
+  if (modalNewspaper) {
+    modalNewspaper.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
 }
 
 function closeNewspaperModal() {
-  modalNewspaper.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  if (modalNewspaper) {
+    modalNewspaper.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
 }
 
 function openNewsModal(title, text) {
-  newsTitleTarget.textContent = title;
-  newsBodyTarget.textContent = text;
-  modalNews.classList.add('active');
-  document.body.style.overflow = 'hidden';
-  lucide.createIcons();
+  if (newsTitleTarget) newsTitleTarget.textContent = title;
+  if (newsBodyTarget) newsBodyTarget.textContent = text;
+  if (modalNews) {
+    modalNews.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
 }
 
 function closeNewsModal() {
-  modalNews.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  if (modalNews) {
+    modalNews.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
 }
 
 // Fechar ao clicar fora da caixa do modal
 window.addEventListener('click', (e) => {
-  if (e.target === modalNewspaper) closeNewspaperModal();
-  if (e.target === modalNews) closeNewsModal();
+  if (modalNewspaper && e.target === modalNewspaper) closeNewspaperModal();
+  if (modalNews && e.target === modalNews) closeNewsModal();
 });
 
 // 5. Download Simulado de PDF
@@ -192,3 +217,37 @@ function handleFormSubmit(e) {
     document.getElementById('visita-form').reset();
   }, 700);
 }
+
+// 7. Filtro Interativo da Equipe Escolar
+const teamFilterBtns = document.querySelectorAll('.team-filter-btn');
+const teamCards = document.querySelectorAll('.team-card');
+
+if (teamFilterBtns.length > 0 && teamCards.length > 0) {
+  teamFilterBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      teamFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+
+      teamCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Ativação automática se houver hash na URL (ex: equipe.html#gestao)
+  const initialHash = window.location.hash.replace('#', '');
+  if (initialHash) {
+    const matchingBtn = document.querySelector(`.team-filter-btn[data-filter="${initialHash}"]`);
+    if (matchingBtn) {
+      matchingBtn.click();
+    }
+  }
+}
+
